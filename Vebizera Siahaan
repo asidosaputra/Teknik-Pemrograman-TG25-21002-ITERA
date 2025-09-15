@@ -1,0 +1,60 @@
+nilai = 95
+if nilai >= 90:
+  predikat = "A"
+elif nilai >= 80:
+  predikat = "AB"
+elif nilai >= 70:
+  predikat = "B"
+elif nilai >= 60:
+  predikat = "BC"
+else:
+  predikat = "D"
+print(predikat) #B
+
+
+
+total = 500000
+is_member = True
+pakai_kupon = True
+
+if pakai_kupon:
+  diskon = 0.20
+elif is_member and total >= 300_000:
+  diskon = 0.10
+else:
+  diskon = 0.0
+
+bayar = total * (1 - diskon)
+print(bayar)
+
+
+
+for i in range(0, 100, 2):
+    if i % 2 == 0:
+      print(f"Bilangan {i} adalah Genap")
+    elif i % 2 == 1:
+      print(f"Bilangan {i} adalah Ganjil")
+    else:
+      print (f"Bilangan {i} bukan Bilangan Bulat")
+
+
+
+username = "vebi"
+password = "vebizera"
+login = True
+
+count = 0
+while True:
+  input_username = input ("username :")
+  input_password = input ("password :")
+
+  count = count + 1
+
+  if input_username == username and input_password == password:
+    print ("Login Berhasil")
+    break
+  else:
+    print("Login Gagal!, Username atau Password Salah!")
+
+  if count == 3:
+    break
