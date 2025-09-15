@@ -1,0 +1,121 @@
+
+elif (bilangan % 2) == 0:
+    print("Bil genap")
+
+else:bilangan = 2.7
+
+if (bilangan % 2) == 1 :
+    print("Bil ganjil")
+    bilangan = bilangan**2
+    print(bilangan)
+    print("Tidak termasuk bilangan"
+
+
+
+
+    
+if nilai >= 90:
+  print("A")
+elif nilai >= 80:
+  print("AB")
+elif nilai >= 70:
+  print("B")
+elif nilai >= 60:
+  print("BC")
+
+
+
+
+
+  total_belanja = 110000
+pake_kupon = True
+
+if total_belanja >= 100000:
+  if pake_kupon:
+      diskon = 0.2*total_belanja
+      total_belanja = total_belanja - diskon
+      print("Total Belanja : ", total_belanja)
+  else:
+      print("total belanja : ", total_belanja)
+else:
+  print("belanja kurang dari Rp.100.000")
+
+
+
+
+
+  for a in range(1, 100, 10):
+  print(a)
+  if a == 100:
+    break
+
+
+
+
+
+for a in range(0, 100):
+ if a % 2 == 0:
+    print(f"Bilangan {a} adalah Genap")
+ elif a % 2 == 1:
+    print(f"Bilangan {a} adalah Ganjil")
+else:
+    print(f"Bilangan {a} bukan Bilangan Bulat")
+
+
+
+
+
+    i = 0
+while (i>=0):
+  print(i)
+  i = i + 1
+
+  if i>100 :
+    break
+
+
+
+
+
+    username = "rryan"
+password = "ryan123"
+login = True
+
+count = 0
+while True:
+  input_username = input("username :")
+  input_password = input("password :")
+
+
+  if input_username == username and input_password == password:
+    print("Login Berhassil")
+    break
+  else:
+    print("Login Gagal, Username atau password salah.")
+    count += 1
+
+  if count == 3:
+    print("Akun Terblokir")
+    break
+
+
+
+
+
+
+    jumlah = input("Jumlah anggota keluarga: ")
+total = 0
+
+for n in range(1, 5, 1):
+    usia = input(f"Usia anggota ke-n: ")
+    total += n
+
+rata2 = total / jumlah
+
+
+
+
+
+
+
+  
