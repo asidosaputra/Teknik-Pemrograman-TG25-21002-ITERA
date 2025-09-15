@@ -1,0 +1,94 @@
+total = 34000
+is_member = "true"
+pakai_kupon = "true"
+
+if pakai_kupon:
+  diskon = 0.20
+elif is_member and total >= 30000:
+  diskon = 0.10
+else:
+  diskon = 0.0
+
+bayar = total * (1 - diskon)
+print(bayar)
+
+
+
+
+
+
+
+
+
+
+data = [1,2,3,4,5]
+
+1**2, 2**2
+
+
+
+
+
+
+for i in range(1, 100):
+   if i % 2 == 0:
+      print(f"bilangan {i} adalah genap")
+   elif i % 2 == 1:
+      print(f"bilangan {i} adalah ganjil")
+   else:
+      print(f"bilangan {i} bukan bilangan bulat")
+
+
+
+
+
+
+username = "ray"
+password = "ray555"
+login = True
+
+count = 0
+while login:
+  input_username = input("username :")
+  input_password = input("password :")
+
+  count = count + 1
+  if input_username == username and input_password  == password:
+    print("login berhasil")
+    break
+  else:
+    print("login gagal, username atau password tidak sesuai")
+
+  if count == 3:
+    break
+
+
+
+
+##1
+1bilangan = 7
+2
+3# if (bilangan % 2 ) ==1:
+4  print("bil ganjil")
+5  bilangan = bilangan**2
+6  print(bilangan)
+7
+8elif (bilangan % 2) == 0:
+9  print("bil genap")
+10
+11else
+12  print("tidak termasuk bilangan")
+
+
+
+
+jumlah = int(input("jumlah anggota keluarga: "))
+total = 1
+
+for i in range(jumlah):
+  usia = int(input(f"50 ke_{i+1}: 
+  total += usia"))
+
+
+rata2 = total / jumlah
+print("rata-rata usia:", round(rata2, 2))
