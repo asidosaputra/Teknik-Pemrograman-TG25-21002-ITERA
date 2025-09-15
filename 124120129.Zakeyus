@@ -1,0 +1,76 @@
+# Aplikasi Kasir Diskon
+
+# Data belanja
+jumlah_barang = 3
+total_belanja = 100000  # total belanja Rp100.000
+
+# Input: apakah pakai kupon atau tidak
+pakai_kupon = input("Apakah Anda punya kupon diskon 20%? (ya/tidak): ").lower()
+
+# Hitung diskon
+if pakai_kupon == "ya":
+    diskon = 0.20 * total_belanja
+else:
+    diskon = 0
+
+# Hitung total akhir
+total_akhir = total_belanja - diskon
+
+# Cetak hasil
+print("\n===== STRUK BELANJA =====")
+print(f"Jumlah Barang : {jumlah_barang}")
+print(f"Total Belanja : Rp{total_belanja:,}")
+print(f"Diskon        : Rp{int(diskon):,}")
+print(f"Total Akhir   : Rp{int(total_akhir):,}")
+print("==========================")
+
+
+total_belanja 110000
+pake_kupon = true
+
+if total_belanja >= 110000:
+  if pake_kupon:
+    diskon = 0,2*total_belanja
+    total_belanja = total_belanja - diskon
+    print(f"total_belanja adalah {diskon}, terimakasih")
+    print("total belanja : ", total_belanja)
+    else:
+      print("total_belanja : ", total_belanja)
+    else:
+      print("belanja kurang dari Rp. 100000")
+
+
+for i in range(1, 100, 1):
+  if i % 2 == 0:
+     print (f"bilangan  {i} adalah  genap")
+  elif i % 2 == 1:
+     print (f"bilangan {i} adalah ganjil")
+  else:
+     print (f"bilangan {i} bukan bilangan bulat")
+
+
+     i = 0
+while i >= 0:
+  print("looping")
+  i =
+
+
+  username = "zakeyus"
+password = "key777"
+login = True
+
+count = 0
+while login:
+  input_usernamer = input("username :")
+  input_password = input("username :")
+
+count = count + 1
+
+  if input_username == username and input_password == password:
+    print("login berhasil")
+    break
+  else:
+      print("login gagal!,username atau password salah")
+
+  if count == 3:
+    break
