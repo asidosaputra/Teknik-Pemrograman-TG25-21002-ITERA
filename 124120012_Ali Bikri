@@ -1,0 +1,119 @@
+bilangan = 10
+ 
+  if (bilangan % 2) == 1:
+      print("Bil Ganjil")
+      bilangan = bilangan**2
+      print (bilangan)
+ 
+  elif (bilangan % 2) == 0:
+      print("Bil Genap")
+ 
+ else:
+    print("Tidak termasuk bilangan")
+
+
+    nilai = 70
+if nilai >= 90:
+  print("A")
+elif nilai >= 80:
+  print("AB")
+elif nilai >= 70:
+  print("B")
+elif nilai >= 60:
+  print("BC")
+
+nilai = 60
+if nilai >=90:
+  print("A")
+elif nilai >= 80:
+  print("AB")
+elif nilai >=70:
+  print("B")
+elif nilai >= 60:
+  print("BC")
+else:
+  print("E--> TIDAK LULUS")
+
+  # Aplikasi Kasir Diskon
+
+# Data belanja
+jumlah_barang = 3
+total_belanja = 100000  # total belanja Rp100.000
+
+# Input: apakah pakai kupon atau tidak
+pakai_kupon = input("Apakah Anda punya kupon diskon 20%? (ya/tidak): ").lower()
+
+# Hitung diskon
+if pakai_kupon == "ya":
+    diskon = 0.20 * total_belanja
+else:
+    diskon = 0
+
+# Hitung total akhir
+total_akhir = total_belanja - diskon
+
+# Cetak hasil
+print("\n===== STRUK BELANJA =====")
+print(f"Jumlah Barang : {jumlah_barang}")
+print(f"Total Belanja : Rp{total_belanja:,}")
+print(f"Diskon        : Rp{int(diskon):,}")
+print(f"Total Akhir   : Rp{int(total_akhir):,}")
+print("==========================")
+
+
+for i in range(0, 100, 1):
+  print(i)
+
+
+  for i in range(0, 100):
+  if i % 2 == 0:
+    print(f"Bilangan {i} adalah Genap")
+  elif i % 2 == 1:
+    print(f"Bilangan {i} adalah Ganjil")
+  else:
+    print(f"Bilangan {i} bukan Bilangan Bulat")
+
+
+    i = 0
+while i >= 0:
+  print("Looping")
+  print(i)
+
+  if i>=100:
+    break
+
+
+    username = "hubungan"
+password = "1234567"
+login = True
+
+count = 0
+while login:
+  input_username = input("Username :")
+  input_password = input("Password :")
+
+  count = count + 1
+  if input_username == username and input_password == password:
+    print("Login Berhasil")
+    break
+  else:
+    print("Login Gagal!, Username atau Password Salah!")
+
+  if count == 3:
+    break
+
+
+    jumlah_anggota = int(input("Masukkan jumlah anggota keluarga: "))
+total_usia = 0
+
+for i in range(jumlah_anggota):
+    usia = int(input(f"Masukkan usia anggota ke-{i+1}: "))
+    total_usia += usia
+if jumlah_anggota > 0:
+    rata_rata = total_usia / jumlah_anggota
+    print(f"Rata-rata usia keluarga adalah: {rata_rata}")
+else:
+    print("Jumlah anggota keluarga tidak valid")
+
+    
+  
