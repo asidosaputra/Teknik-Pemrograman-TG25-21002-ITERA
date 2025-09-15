@@ -1,0 +1,70 @@
+nilai = 80
+
+if nilai >= 90:
+    print("A")
+elif nilai >= 80:
+    print("AB")
+elif nilai >= 70:
+    print("B")
+elif nilai >= 60:
+    print("BC")
+else:
+    print("C") # Added an else case for completenes
+
+total_belanja = 110000
+pake_kupon = True
+
+if total_belanja >= 100000:
+  if pake_kupon:
+    diskon = 0.2*total_belanja
+    print(f"Total Diskon adalah {diskon}, Terimakasih!")
+    total_belanja = total_belanja - diskon
+    print("Total Belanja : ", total_belanja)
+  else:
+   print("Total Belanja :", total_belanja)
+else:
+   print("Belanja kurang dari RP. 100.000")
+
+nilai = [80, 92, 75, 88]
+
+total = 0
+for n in nilai:
+    total += n
+
+rata = total / len(nilai)
+print(total, rata)
+
+username = "andreas"
+password = "andre4s"
+login = True
+
+count = 0
+while login:
+  input_username = input("Username:")
+  input_password = input("Password:")
+
+  count = count + 1
+  if input_username == username and input_password == password:
+    print("Login berhasil")
+    break
+  else:
+    print("Login Gagal!, Username atau Password Salah!")
+
+    if count ==3:
+      break
+
+hitungan = 5
+while hitungan > 0:
+    print(hitungan)
+    hitungan -= 1
+print("GO!")
+
+jumlah = int(input("Jumlah anggota keluarga: "))
+total = 0
+
+for i in range(jumlah):
+    usia = int(input(f"Masukkan usia anggota ke-{i+1}: "))
+    total += usia
+
+rata2 = total / jumlah
+print("Rata-rata usia:", round(rata2, 2))
