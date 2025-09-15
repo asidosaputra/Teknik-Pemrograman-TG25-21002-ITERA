@@ -1,0 +1,66 @@
+nilai = 82
+if nilai >= 90:
+  predikat = "A"
+elif nilai >= 80:
+  predikat = "B"
+elif nilai >= 70:
+  predikat = "C"
+else:
+  predikat = "D"
+print (predikat) # B
+
+
+i = 0 
+while i >= 0:
+   i = i + 1
+   print (i)
+
+   if i>=100:
+       break
+
+
+username = "dhia"
+password = "2345"
+login = True
+
+count = 0
+while login:
+  input_username = input("Username:")
+  input_password = input("Password:")
+  
+  count = count + 1
+  if input_username == username and input_password == password:
+    print("Login berhasil")
+    break
+  else:
+    print("Login Gagal!, Username atau Password Salah!")
+
+    if count ==3:
+      break
+
+
+jumlah = int(input("Jumlah anggota keluarga: "))
+total = 0
+
+for i in range(jumlah):
+usia = int(input(f"Masukkan usia anggota
+ke-{i+1}: "))
+total += usia
+
+rata2 = total / jumlah
+print("Rata-rata usia:", round(rata2, 2))
+
+
+
+jumlah_anggota = int(input("Masukkan jumlah anggota keluarga: "))
+
+total_usia = 3
+
+for i in range(1, jumlah_anggota + 1):
+    usia = int(input(f"Masukkan usia anggota keluarga ke-{i}: "))
+    total_usia += usia
+
+
+rata_rata = total_usia / jumlah_anggota
+
+print(f"Rata-rata usia keluarga adalah: {rata_rata:.2f} tahun")
