@@ -1,0 +1,77 @@
+bilangan = 10
+
+if (bilangan % 2) == 1:
+  print("Bilangan Ganjil")
+  bilangan = bilangan**2
+  print ("bilangan ganjil")
+
+elif (bilangan % 2) == 0:
+  print ("bilangan genap")
+
+else:
+  print("tidak termasuk bilangan")
+
+nilai = 85
+
+if nilai >= 90:
+  print ("A")
+elif nilai >= 80:
+  print ("AB")
+elif nilai >= 70:
+  print ("B")
+elif nilai >= 60:
+  print ("BC")
+elif nilai >= 50:
+  print ("C")
+else:
+  print ("E ---> Tidak Lulus Lu")
+
+total_belanja = 80000
+pake_kupon = True
+if total_belanja >= 100000:
+  if pake_kupon:
+    diskon = 0.2*total_belanja
+    total_belanja = total_belanja - diskon
+    print ("total Belanja : ", total_belanja)
+  else:
+    print("total belanja", total_belanja)
+else:
+  print ("Uangmu ga cukup Bos Minimal 100000")
+
+# for (A) in range (start, end, step):
+# print (A)
+for A in range (1, 100, 4):
+  print (A)
+
+for a in range (0, 100):
+  if a % 2 == 0:
+    print (f,"bilangan genap")
+
+i = 0
+while i >= 0:
+  i = i + 1
+  print (i)
+
+  if i >= 100:
+    break
+
+username = "Petrus"
+password = "12345"
+
+count = 0
+while True:
+  input_username = input("Username :")
+  input_password = input("Password :")
+
+  count = count + 1
+
+  if input_username == username and input_password == password:
+    print("login berhasil")
+    login = False
+    break
+  else:
+    print("Login Gagal!,Username dan Passwordmu salah Bos")
+
+  if count == 3:
+    print("Login Gagal!,Username dan Passwordmu salah Bos")
+    break
