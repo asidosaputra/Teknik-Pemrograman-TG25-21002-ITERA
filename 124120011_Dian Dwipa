@@ -1,0 +1,78 @@
+bilangan = 7
+if (bilangan % 2) == 1:
+    print("bilangan ganjil")
+else:
+    print("bilangan genap")
+
+nilai = 80
+
+if nilai >= 90:
+  print ("A")
+elif nilai >= 80:
+  print ("AB")
+elif nilai >= 70:
+  print ("B")
+elif nilai <= 60:
+  print ("E")\
+i = 0
+while i >= 0
+   i = i + 1
+   print (i)
+
+   if i >= 100:
+      break
+
+
+total = 120000
+is_member = True
+pakai_kupon = True
+
+if pakai_kupon:
+    diskon = 0.20
+elif is_member and total >= 100_000:
+    diskon = 0.10
+else:
+    diskon = 0.0
+
+bayar = total * (1 - diskon)
+print(bayar)
+
+
+for i in range(0, 100, 2):
+    if i % 2 == 0:
+      print (f'bilangan {i} bilangan genap')
+    elif i %2 ==1:
+      print (f'bilangan {i} bilangan ganjil')
+    else:
+      print(f"bilangan {i} bukan bilangan bulat")
+
+username="Dian Dwipa"
+password="RTGA"
+
+percobaan = 0
+while percobaan < 3:
+    user=input("Username:")
+    pw=input("Password:")
+
+    if user == username and pw == password:
+        print("Login berhasil!")
+        break
+    
+    else:
+        print("Username dan Password salah!")
+        percobaan += 1
+    
+if percobaan == 3:
+    print("Akun terkunci karena gagal 3x Login.")
+
+
+
+jumlah = int(input("Jumlah Anggota Keluarga: "))
+total = 0
+
+for i in range (jumlah):
+    usia = int(input(f"Masukkan Anggota Keluarga ke-{i+1}:"))
+    total += usia
+
+rata2 = total/jumlah
+print("Rata Rata usia:", round(rata2,2))
