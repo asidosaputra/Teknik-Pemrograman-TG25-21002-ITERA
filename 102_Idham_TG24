@@ -1,0 +1,56 @@
+nilai = 100.000
+
+if nilai >= 90 :
+  print ("A")
+  elif nilai >=80 :
+    print ("B")
+total = 100000
+is_member = True
+pakai_kupon = True
+
+if pakai_kupon:
+diskon = 0.20
+elif is_member and total >=
+100_000:
+diskon = 0.10
+else:
+diskon = 0.0
+
+bayar = total * (20 diskon)
+print(bayar)
+
+for i in range (0, 100) :
+  if i % 2 == 0:
+    print (f"bilangan {i} adalah genap")
+    elif i % 2 == 1 :
+      print (f"bilangan {i} adalah ganjil")
+      else :
+        print (ganjil
+
+i = 0
+while (i>=0):
+  print (i)
+  i = i + 1
+
+  if i>100 :
+    break
+
+username = "idham"
+password : "idham123"
+
+
+while True :
+   input_username = ("username :")
+   input_password = ("password :")
+
+
+count = count + 1
+ if input_username == username and input_password == password :
+   print("Login Berhasil")
+   break
+ else:
+  print ("login gagal!, username atau password salah!")
+   if count==3 :
+    break
+
+
