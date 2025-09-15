@@ -1,0 +1,86 @@
+nilai = 110
+ 
+if (nilai >= 90) :
+    print("A")
+
+elif (nilai >=80) :
+     print("AB")
+
+elif (nilai >=70) :
+      print("B")
+elif (nilai >=60) :
+      print("BC")
+elif (nilai >=50) :
+      print("C")
+else:
+    print("E")
+
+
+
+#my kasir
+
+jumlah = 90.000 
+
+pake_kupon = True
+
+if(jumlah >=100.000) :
+  if(pake_kupon) :
+    discon = 0.2*jumlah
+    jumlah = jumlah - discon
+    print("jumlah :", jumlah )
+  else:
+    print("jumlah :", jumlah)
+
+else:
+  print("jumlah kurang dari 100.000")
+
+
+
+for i in range(1, 100, 2) :
+         print(i) 
+
+
+
+for i in range(0, 100) :
+    if i % 2 == 0:
+       print(f"bilangan {i} adalah genap")
+    elif i % 2 == 1:
+       print(f"bilangan {i} adalah ganjil")
+else:
+    print(f"bilangan {1} bukan bilangan bulat")      
+
+
+
+
+
+i = 0
+while i >=0:
+  i = i + 1
+  print(i)
+
+  if i >=100:
+    break
+
+
+
+
+username = "indy"
+password = "indy111"
+
+login = True
+
+count = 0
+while login:
+    input_username = input("masukkan username : ")
+    input_password = input("masukkan password : ")
+
+    if input_username == username and input_password == password:
+              print("login berhasil")
+              break
+    else:
+      print("login gagal, usename atau password salah !")
+
+    if count == 3:
+      break
+
+    
