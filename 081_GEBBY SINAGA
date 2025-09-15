@@ -1,0 +1,102 @@
+bilangan = 9
+
+if print(bilangan % 2) == 5:
+    print("bilangan ganjil")
+    bilangan = bilangan**2
+    print(bilangan)
+
+elif (bilangan % 2) == 0:
+    print("bilangan genap")
+
+else:
+    print("tidak termasuk bilangan genap")
+
+
+
+
+nilai = 90
+
+if nilai >=90:
+  print ("A")
+elif nilai >=80:
+  print ("AB")
+elif nilai >=70:
+  print ("B")
+elif nilai >= 60:
+  print ("C")
+
+
+
+
+
+Belanja = 110000
+pake_kupon = True
+
+if Belanja >= 100000:
+  if pake_kupon:
+    diskon = 0.2*Belanja
+    print(f"Total diskon adalah {diskon}, Terimakasih!")
+    Belanja = Belanja - diskon
+    print("total belanja : ", Belanja)
+
+  else:
+    print("total belanja : ", Belanja)
+
+else:
+  print("Belanja kurang dari 100.000")
+
+
+
+
+
+for i in range(0, 110, 10):
+    print(i)
+
+
+
+
+i=0
+while i >=0:
+  i = i + 1
+  print (i)
+  if  i>=100:
+    break
+
+
+
+
+for i in range (0,50,1):
+  if i % 2 ==0:
+    print (f"bil{i}  genap")
+  elif i % 2 != 0:
+    print(f"bil{i}  ganjil")
+  else:
+    print(f"bil{i} bukan bilangan bulat ")
+
+
+
+
+
+from ast import Break
+username = "gebian"
+password = "gebby"
+
+login = True
+
+count = 0
+while login:
+  input_username = input("username :")
+  input_password = input("password :")
+
+  count = count + 1
+
+  if input_username == username and input_password == password:
+    print("Login Berhasil!")
+    break
+  else:
+    print("Login Gagal!, username atau password salah")
+
+  if count == 3:
+    break
+
+
