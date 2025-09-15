@@ -1,0 +1,76 @@
+for i in range (1, 100, 3):
+  print (i)
+
+for i in range (1, 100, 4):
+  if i % 2 == 0:
+    print (f"bilangan {i} adalah genap")
+  elif i % 2 == 1:
+    print (f"bilangan {i} adalah ganjil")
+  else:
+    print(f"bilangan {i} bukan bilangan bulat")
+  if i == 50:
+    break
+
+nilai = 50
+
+if nilai >= 90:
+  print("A")
+elif nilai >= 80:
+  print ("AB")
+elif nilai >= 70:
+  print ("B")
+elif nilai <= 60:
+  print ("E")
+
+i = 0
+while i >= 0:
+  i = i + 1
+  print (i)
+
+  if i >= 100:
+    break
+
+username = "adminslot"
+password = "ingatakhirat"
+login = False
+
+count = 0
+while count < 3:
+  input_username = input ("username:")
+  input_password = input ("password:")
+
+  if input_username == username and input_password == password:
+    print ("login berhasil")
+    login = True
+    break
+  else:
+    print ("login gagal!, username atau password salah!")
+  count = count +
+
+if not login:
+  print ("akun terkunci")
+
+total = 350000
+is_member = True
+pakai_kupon = True
+
+if pakai_kupon:
+    diskon = 0.20
+elif is_member and total >= 300_000:
+    diskon = 0.10
+else:
+    diskon = 0.0
+
+bayar = total * (1 - diskon)
+print(bayar)
+
+total_belanja = 150000
+diskon_persen = 10
+
+jumlah_diskon = (diskon_persen / 100) * total_belanja
+
+harga_setelah_diskon = total_belanja - jumlah_diskon
+
+print(f"Total belanja: Rp {total_belanja}")
+print(f"Diskon ({diskon_persen}%): Rp {jumlah_diskon}")
+print(f"Harga setelah diskon: Rp {harga_setelah_diskon}")
