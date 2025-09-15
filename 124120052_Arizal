@@ -1,0 +1,40 @@
+nilai = 100.000
+
+if nilai >= 90 :
+  print ("A")
+  elif nilai >=80 :
+    print ("B")
+
+total_belanja = 110000
+pake_kupon = true
+
+if total_belanjaan >= 100000 :
+  if pake_kupon :
+    diskon = 0.2*total_belanjaan
+    total_belanjaan = total_belanjaan - diskon
+    print ("Total belanja" : ", total_belanjaan)
+    else:
+      print("belanja anda kurang dari Rp. 100.000")
+
+
+      username  = "admin"
+password = "admin123"
+
+
+count = 0
+while True :
+  input_username = input ("username:")
+  input_password = input ("password:")
+
+count = count + 1
+if input_username == username and input_password == password :
+  print ("Login berhasil")
+  break
+  else :
+    print ("Login gagal!. username atau password salah!")
+
+    if count == 3 :
+      break
+
+
+      
