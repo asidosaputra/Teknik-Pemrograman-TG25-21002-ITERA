@@ -1,0 +1,94 @@
+1# Fenya Enita Ginting --> Ini contoh komentar
+
+bilangan = 7
+
+if (bilangan % 2) == 1:
+    print("Bilangan ganjil")
+else:
+    print("Bilangan genap")
+
+    nilai = 90
+
+if nilai >= 90:
+  print("A")
+elif nilai >= 80:
+  print("B")
+elif nilai >= 70:
+    print("B")
+elif nilai >= 60:
+    print("BC")
+else:
+    print("C")
+
+    for i in range(0, 100, 2):
+    if i % 2 == 0:
+      print (f'bilangan {i} bilangan genap')
+    elif i %2 ==1:
+      print (f'bilangan {i} bilangan ganjil')
+    else:
+      print(f"bilangan {i} bukan bilangan bulat")
+
+      total_belanja = 120.000
+pake_kupon = True
+
+diskon = 0  
+
+if total_belanja >= 100.000:
+    if pake_kupon:
+        diskon = 0.2 * total_belanja 
+
+    total_bayar = total_belanja - diskon
+    print("Total Belanja : Rp", total_belanja)
+    print("Diskon        : Rp", diskon)
+    print("Total Bayar   : Rp", total_bayar)
+else:
+    print("Belanja kurang dari Rp. 100.000")
+
+    username="admin"
+ password="admin123"
+
+percobaan = 0
+while percobaan < 3:
+ user=input("Username:")
+ pw=input("Password:")
+
+if user == username and pw == 
+password:
+print("Login berhasil!")
+break 
+
+else:
+  print("Username dan Password salah!")
+    percobaan +=1
+
+if percobaan == 3:
+  print ("Akun terkunci karena gagal 3x Login.")
+
+  username = "admin"
+password = "12345"
+
+percobaan = 0
+while percobaan < 3:
+user = input("Username: ")
+pw = input("Password: ")
+
+if user == username and pw == password:
+print("Login berhasil!")
+break
+else:
+print("Username atau password salah.")
+percobaan += 1
+
+if percobaan == 3:
+print("Akun terkunci karena 3x gagal login.")
+
+jumlah = int(input("Jumlah anggota keluarga: "))
+total = 0
+
+for i in range(jumlah):
+usia = int(input(f"Masukkan usia anggota
+ke-{i+1}: "))
+total += usia
+
+rata2 = total / jumlah
+print("Rata-rata usia:", round(rata2, 2))
