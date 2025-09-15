@@ -1,0 +1,64 @@
+1 bilangan = 7
+2
+3 if (bilangan % 2) == 1:
+4     print("Bil Ganjil")
+5     bilangan = bilangan**2
+6     print (bilangan)
+
+
+nilai =80
+
+if nilai >= 90 :
+   print("A")
+elif nilai >= 80:
+   print("B")
+elif nilai >= 70:
+   print("C")
+elif nilai >= 60:
+  print("D")
+else:
+  print("E")
+
+
+
+total_belanja = 110000
+pake_kupon = True
+
+if total_belanja >= 100000:
+  if pake_kupon :
+    diskon = 0.2*total_belanja
+    total_belanja = total_belanja - diskon
+    print("Total_belanja : ", total_belanja)
+  else:
+    print("Total_belanja : ", total_belanja)
+else:
+  print("Belanja kurang dari Rp. 100.000")
+
+
+  for i in range(1, 100, 1):
+  if i % 2 == 0 :
+    print (f"Bilangan {i} adalah Genap")
+  elif i % 2 == 1:
+    print (f"Bilangan {i} adalah Ganjil")
+  else :
+    print (f"Bilangan {i} bukan Bilangan Bulat")
+
+
+    username  = "admin"
+password = "admin123"
+
+
+count = 0
+while True :
+  input_username = input ("username:")
+  input_password = input ("password:")
+
+  count = count + 1
+  if input_username == username and input_password == password:
+    print ("login berhasil")
+    break
+  else :
+    print("login gagal!, username atau password salah! ")
+
+    if count == 3 :
+      break
