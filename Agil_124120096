@@ -1,0 +1,18 @@
+username = "agil"
+password = "agil123"
+login = True
+
+count = 0
+while login:
+  input_username = input("username")
+  input_password = input("password")
+
+  count = count + 1
+  if input_username == username and input_password == password:
+    print("login berhasil")
+    break
+  else:
+      print("login gagal, username atau password salah!")
+
+      if count == 3:
+        break
