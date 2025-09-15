@@ -1,0 +1,80 @@
+total_belanja = 110000
+pake_kupon = False
+
+if total_belanja >= 100000:
+    if pake_kupon:
+        diskon = 0.2*total_belanja
+        total_belanja = total_belanja-diskon
+    print("Total Belanja : ", total_belanja)
+else:
+    print("Total Belanja : ", total_belanja)
+
+
+# Aplikasi Kasir Diskon
+
+# Data belanja
+jumlah_barang = 3
+total_belanja = 100000  # total belanja Rp100.000
+
+# Input: apakah pakai kupon atau tidak
+pakai_kupon = input("Apakah Anda punya kupon diskon 20%? (ya/tidak): ").lower()
+
+# Hitung diskon
+if pakai_kupon == "ya":
+    diskon = 0.20 * total_belanja
+else:
+    diskon = 0
+
+# Hitung total akhir
+total_akhir = total_belanja - diskon
+
+# Cetak hasil
+print("\n===== STRUK BELANJA =====")
+print(f"Jumlah Barang : {jumlah_barang}")
+print(f"Total Belanja : Rp{total_belanja:,}")
+print(f"Diskon        : Rp{int(diskon):,}")
+print(f"Total Akhir   : Rp{int(total_akhir):,}")
+print("==========================")
+
+
+for i in range(0, 100):
+    if i % 2 == 0:
+        print(f'bilangan {i} bilangan genap')
+    else:
+        print(f'bilangan {i} bilangan ganjil')
+
+
+for i in range(0, 100):
+    if i % 2 == 0:
+        print(f"bilangan {i} bilangan genap")
+    else:
+        print(f"bilangan {i} bilangan ganjil")
+
+
+for i in range(0, 2, 100):  #
+    if i % 2 == 0:
+        print(f"bilangan {i} bilangan genap")
+    else:
+        print(f"bilangan {i} bilangan ganjil")
+
+
+
+USERNAME = "admin"
+PASSWORD = "rahasia123"
+max_attempts = 3
+count = 0
+
+while count < max_attempts:
+    input_username = input("username: ")
+    input_password = getpass.getpass("password: ")
+    count += 1
+
+    if input_username == USERNAME and input_password == PASSWORD:
+        print("Login berhasil!")
+        break
+    else:
+        remaining = max_attempts - count
+        if remaining > 0:
+            print(f"Login gagal! Username atau password salah. Sisa percobaan: {remaining}")
+        else:
+            print("Login gagal! Akun terkunci. Coba lagi nanti.")
