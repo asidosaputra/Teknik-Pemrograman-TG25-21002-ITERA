@@ -1,0 +1,58 @@
+nilai = 85
+if nilai >= 90:
+  print ("A")
+elif nilai >= 80:
+  print ("AB")
+elif nilai >= 70:
+  print ("B")
+elif nilai >= 60:
+  print ("BC")
+else:
+  print ("tidak luilus")
+
+
+
+  
+
+for i in range (1, 100):
+  if i % 2 == 0:
+    print (f"bilangan {i} adalah bilangan genap")
+  elif i % 2 == 1:
+    print (f"bilangan {i} adalah bilangan ganjil")
+  else:
+    print (f"bilangan {i} bukan bilangan bulat")
+
+
+
+
+
+    i = 0
+while i >= 0:
+  print("looping")
+  print(i)
+
+  if i>= 100:
+    break
+
+
+
+
+
+    username = "ismail"
+password = "12345"
+login = True
+
+count = 0
+while login:
+  input_username = input("username :")
+  input_password = input("password :")
+
+  count = count + 1
+  if input_username == username and input_password  == password:
+    print("login berhasil")
+    break
+  else:
+    print("login gagal, username atau password tidak sesuai")
+
+  if count == 3:
+    break
