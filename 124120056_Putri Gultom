@@ -1,0 +1,207 @@
+nilai = 60
+if nilai >=90:
+  print("A")
+elif nilai >= 80:
+  print("AB")
+elif nilai >=70:
+  print("B")
+elif nilai >= 60:
+  print("BC")
+else:
+  print("E--> TIDAK LULUS")
+  for i in range(0, 100, 1):
+print("i")for i in range(0, 100):
+  if i % 2 == 0:
+    print(f"bilangan {i} adalah genap")
+  elif i % 2 == 1:
+    print(f"bilangan {i} adalah ganjil")
+  else:
+    print(f"bilangan {i} bukan bilanagn bulat")
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genap
+Bilangan 1 adalah Genapusername = "admin"
+password = "admin123"
+
+count = 0
+while True:
+  input_username = input("username :")
+  input_password = input("password :")
+
+count = count + 1
+
+  if input_username == username and input_password == password:
+    print("login berhasil")
+    break
+  else:
+    print("login Gagal!, username atau password salah!")
+
+    if count == 3:
+      break
+File "/tmp/ipython-input-2712143733.py", line 11
+    if input_username == username and input_password == password:
+    ^
+IndentationError: unexpected indent
+i = 0
+while i >= 0:
+  i = i + 1
+  print(i)
+
+  if i>=100:
+    break1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+
+[5]
+0s
+i = 0
+while i >= 0:
+  print("looping")
+  i =
+i = 0
+while i >= 0:
+  print("looping")
+  i =
