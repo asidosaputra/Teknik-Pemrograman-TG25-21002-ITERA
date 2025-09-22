@@ -1,0 +1,77 @@
+def sapa(nama) :
+    print(f"Hallo {nama}, selamat pagi")
+
+  nama = "gebby"
+sapa (nama)
+
+def luas_persegi(sisi) :
+    luas = sisi*sisi
+    return luas
+
+hasil = luas_persegi(4)
+
+print(hasil)
+
+
+F = G*(m1*m2/r**2)
+
+def gaya_gravitasi(m1, m2,  r, G=6.7e-11):
+    F = G*(m1*m2/r**2)
+    return F
+
+gaya_gravitasi(100, 200, 0.1)
+
+def total(*args):
+    return sum(args)
+
+args = total(1,2,3,4, 5)
+
+print(args)
+
+harga = 120.000
+> 100.000 -> 20%
+
+Buat fungsi untuk mengembalikan
+harga akhir setelah di potong
+
+
+def harga_diskon(harga, min_harga=100000, diskon=20):
+    if harga > min_harga:
+        potongan_harga = (diskon * harga) / 100
+        return harga - potongan_harga
+    else:
+        potongan_harga = 0
+        return harga - potongan_harga
+
+harga_diskon(120000)
+
+luas = lambda sisi : sisi*sisi
+print(luas(10))
+
+x =10
+
+def ubah():
+    
+    x = 30
+    
+print(x)
+
+def luar():
+    x = "Phyton"
+    def dalam():
+        print(f"Saya belajar {x}")
+    dalam()
+    
+luar()
+
+
+import matematika
+from matematika import perkalian
+
+a = 5
+b = 6
+
+hasil_jumlah = matematika.pengurangan(a, b)
+print(hasil_jumlah)
+#hasil_kali = perkalian(a, b)
+#print(hasil_kali)
