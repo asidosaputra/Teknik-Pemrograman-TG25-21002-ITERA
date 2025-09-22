@@ -1,0 +1,83 @@
+
+1(*)
+def sapa(nama):
+  print(f"halo {nama}, apa kabar!")
+
+2(*)
+nama = "ismail"
+sapa(nama)
+
+
+def luas_persegi(sisi):
+  luas = sisi*sisi
+  return luas
+
+hasil = luas_persegi(4)
+
+print(hasil)
+
+
+3(fungsi defoult)
+def gaya_gravitasi(m1, m2, r, G=6.7e-11):
+  F = G*(m1*m2/r**2)
+  return F
+
+gaya_gravitasi(100, 200, 0.1, G=100)
+
+
+4(fungsi dengan pointer)
+
+def total(*args):
+  return sum(args)
+
+args = total(1, 2, 3, 4, 5, 6)
+
+print(args)
+
+
+
+harga = 120.000
+diskon 10.000 -> 20%
+
+def harga_diskon(harga, min_harga=100000, diskon=20%):
+  if harga > min_harga:
+    potongan_harga = (diskon*harga)/100
+  else:
+    potongan_harga = 0
+  
+  return harga - potongan_harga
+
+harga_diskon(120000)
+
+
+5(lambda)
+
+luas = lambda sisi : sisi*sisi
+
+print(luas(10))
+
+luas = lambda sisi : sisi*sisi
+
+x = int(input("masukan nilai"))
+print(luas(x))
+
+
+
+6(scope function)
+
+
+  x = 10
+
+def ubah():
+  x = 30
+
+print(x)
+
+  x = 10
+
+def ubah():
+  global x
+  x = 30
+
+ubah()
+print(x)
