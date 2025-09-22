@@ -1,0 +1,80 @@
+def sapa(nama):
+  print(f"Halo{nama}, Selamat pagi!")
+  nama = "Nira"
+sapa(nama)
+
+
+
+def luas_persegi(sisi) :
+    luas = sisi*sisi
+    return luas
+
+sisi = 4
+hasil = luas_persegi(sisi)
+
+print(hasil)
+
+
+
+def gaya_gravitasi(m1, m2, r, G=6.7e-11):
+  F = G*(m1*m2/r**2)
+  return F
+gaya_gravitasi(100, 200, 0.1, G=100)
+
+
+
+def total(*args):
+  return sum(args)
+args = total(1, 2, 3, 4, 5)
+print(args)
+
+
+
+def hitung_harga_akhir(harga_awal, persen_diskon):
+    diskon = harga_awal * (persen_diskon / 100)
+    harga_akhir = harga_awal - diskon
+    return harga_akhir
+
+harga = 100000
+diskon = 20
+print(f"Harga akhir: {hitung_harga_akhir(harga, diskon)}")
+
+
+
+def harga_discount(harga,min_harga=100000,discount=20):
+    if harga > min_harga:
+        potongan_harga = discount*harga/100
+    else:
+        potongan_harga = 0
+    return harga-potongan_harga
+harga_discount(150000)
+
+
+
+def harga_diskon(harga, min_harga=100000, diskon=20):
+    potongan = 0
+    if harga > min_harga:
+      potongan = (diskon*harga)/100
+    else:
+      potongan = 0
+    return harga - potongan
+
+
+
+luas = lambda sisi : sisi*sisi
+print(luas(10))
+
+
+
+x = 10
+
+def ubah():
+  global x
+  x = 30
+
+ubah()
+print(x)
+
+
+
+
