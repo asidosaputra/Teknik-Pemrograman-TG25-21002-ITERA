@@ -1,0 +1,38 @@
+def potongan_harga(harga):
+    if harga > 100000:
+        harga = harga - (harga * 0.2)   # diskon 20%
+    return harga
+
+# Contoh penggunaan
+harga_awal = 120000
+harga_akhir = potongan_harga(harga_awal)
+
+print("Harga awal :", harga_awal)
+print("Harga akhir setelah dipotong :", harga_akhir)
+
+# Fungsi biasa
+def tambah(a, b):
+    return a + b
+
+def kali(a, b):
+    return a * b
+
+def kubik(x):
+    return x ** 3
+
+
+# Menggunakan Lambda
+tambah_lambda = lambda a, b: a + b
+kali_lambda = lambda a, b: a * b
+kubik_lambda = lambda x: x ** 3
+
+
+# Coba panggil fungsi
+print(tambah(3, 4))           # Output: 7
+print(tambah_lambda(3, 4))    # Output: 7
+
+print(kali(5, 2))             # Output: 10
+print(kali_lambda(5, 2))      # Output: 10
+
+print(kubik(3))               # Output: 27
+print(kubik_lambda(3))        # Output: 27
