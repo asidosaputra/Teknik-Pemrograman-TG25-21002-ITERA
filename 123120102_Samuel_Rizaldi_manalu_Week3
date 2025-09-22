@@ -1,0 +1,83 @@
+# Teknik Pemrograman Week 3
+# Samuel Rizaldi Manalu
+
+
+# 1. Fungsi Tanpa Return
+def sapa(nama):
+    print(f"Halo {nama}, selamat sore!")
+nama = "Samuel"
+sapa(nama)
+
+#2. Fungsi Dengan Return
+def luas_persegi(sisi):
+    luas = sisi*sisi
+    return luas
+sisi = 10
+print(f"Luas persegi dengan sisi {sisi} cm adalah {luas_persegi(sisi)} cm2")
+
+
+#3. FUngsi dengan Paraameter Default
+def gaya_gravitasi(m1,m2,r,G=6.674*10**11):
+    f = G*(m1*m2/r**2)
+    return f
+gaya_gravitasi(100,200,0.1, G=100)
+
+
+# 4. Fungsi dengan Konsep Pointer(*)
+def total(*args):
+  return sum(args)
+args = total(1,2,3,4,5,6,7)
+print(args)
+
+
+# 5 challenge 1 Fungsi  untuk menghitung discount
+def harga_discount(harga,min_harga=100000,discount=20):
+    if harga > min_harga:
+        potongan_harga = discount*harga/100
+    else:
+        potongan_harga = 0
+    return harga-potongan_harga
+harga_discount(150000)
+     
+    
+# 6. Lambda Function
+luas = lambda sisi: sisi*sisi
+
+x = int(input("Masukkan nilai sisi"))
+print(Luas(x))
+
+
+# 7. Fungsi Scoope / Konsep Scoope / Variable Local dan Global
+x = 110
+
+def ubah():
+    global x
+    x = 150
+
+ubah()
+print(x)
+
+def luar():
+    x = "python"
+    def dalam():
+        print("dalam:",x)
+
+
+def penjumlahan(a, b):
+    return a + b
+
+def pengurangan(a, b):
+    return a - b
+
+def perkalian(a, b):
+    return a * b
+
+
+import matematika as mtk
+from matematika import pengurangan
+a = 5
+b = 4
+
+hasil = mtk.pengurangan(a, b)
+hasil_kali = mtk.perkalian(a, b)
+hasil_kali= perkalian(a,b)
