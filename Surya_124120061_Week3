@@ -1,0 +1,58 @@
+def sapa(nama):
+  print(f"Hallo {nama}, selamat pagi!")
+
+nama = "Surya"
+sap (nama)
+
+def luas_persegi (sisi):
+  luas = sisi*sisi :
+  return luas
+
+luas_persegi(4)
+
+print(hasil)
+
+F=G*(m1*m2/r**2)
+
+def gaya_gravitasi(m1, m2, r, G=6.7e-11):
+  F=G*(m1*m2/r**2)
+  return F 
+
+gaya_gravitasi(100, 200, 0.1, G=100)
+
+def nilai (*args) :
+  print (args)
+  return sum (args) 
+
+args =total (1, 2)
+
+challenge 1
+
+harga = 100.000
+Harga > 100.000-> 20%
+
+Buatlah fungsi untuk mengembalikan
+Harga akhir setelah dipotong
+
+def harga_diskon(harga, min_harga=100000, diskon=20):
+  if harga > min_harga:
+    potongan_harga = (diskon*harga)/100
+  else:
+    potongan_harga = 0
+  return harga - potongan_harga
+
+herga_diskon(20000)
+
+luas = lambda sisi : sisi*sisi
+
+x = int (input("masukkan nilai"))
+print(luas(x))
+
+x = 10
+
+def ubah () :
+  global x
+  x = 30
+  
+ubah ()
+print(x)
