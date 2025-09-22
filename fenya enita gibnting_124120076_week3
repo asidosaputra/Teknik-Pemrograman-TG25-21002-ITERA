@@ -1,0 +1,93 @@
+ef dsapa (fenya):
+  print (f"halo {fenya},selamat pagi!")
+
+
+nama ="fenya"
+sapa(fenya)
+
+from os import SF_NODISKIO
+def luas persegi (sisi):
+  luas = sisi*sisi
+  return luas
+
+hasil = luas persegi(4)
+
+print (hasil)
+
+F = G*(m1*m2/r**2)
+
+def gaya_gravitasi (m1, m2, r, G=6.7e-11):
+  F = G*(m1*m2/r**2)
+  return F
+
+gaya_gravitasi(100, 200, 0.1, G=100)
+
+def total(*args):
+    return sum(args)
+
+args = total(1, 2, 3,  4, 5,)
+
+print(args)
+
+Harga = 120.000
+harga > 100.000 -> 20%
+
+
+
+
+
+def harga_diskon(harga, min_harga=100000, diskon=20):
+    if harga > min_harga:
+        potongan_harga = (diskon * harga) / 100
+    else:
+        potongan_harga = 0
+    return harga - potongan_harga
+
+
+luas = lamda sisi : sisi*sisi
+
+
+
+
+
+
+
+1x = 10
+
+dwf ubah():
+    global x 
+ x = 30
+
+
+ ubah ()
+ print(x)
+
+def luar():
+  x = "Python"
+def dalam ():
+  print (f"Saya belajar{x}")
+dalam()
+
+luar()
+
+
+
+def c_to_f(c):
+    "Konversi Celcius ke Fahrenheit"
+    return (c * 9/5) + 32
+
+def f_to_c(f):
+    "Konversi Fahrenheit ke Celcius"
+    return (f - 32) * 5/9
+
+c = float(input("Masukkan suhu Celcius: "))
+
+f = konversi.c_to_f(c)
+
+print(f"Suhu dalam Fahrenheit = {f}")
+def luas_persegi(sisi) :
+  luas = sisi * sisi
+  return luas
+hasil = (luas_persegi(4))
+
+print(hasil)
