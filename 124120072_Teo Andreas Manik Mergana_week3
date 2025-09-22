@@ -1,0 +1,27 @@
+def sapa(teo):
+    print (f"Halo {nama}, selamat pagi")
+
+def luas_persegi(sisi) :
+  luas = sisi * sisi
+  return luas
+hasil = (luas_persegi(4))
+
+print(hasil)
+
+def gaya_gravitasi(m1, m2, r, G=6.7e-11):
+    F = G*(m1*m2/r**2)
+    return F
+gaya_gravitasi(100,200,0.1,10)
+
+def total(*args):
+    return sum(args)
+args = total(1, 2, 3, 4, 5)
+print(args)
+
+
+x = 100
+def ubah ():
+  global x
+  x = 10
+ubah()
+print(x)
