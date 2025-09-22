@@ -1,0 +1,392 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Fungsi tanpa return"
+      ],
+      "metadata": {
+        "id": "HIzo50uuA5kh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "xk6kmlkPAAvL"
+      },
+      "outputs": [],
+      "source": [
+        "def sapa(nama):\n",
+        "  print(f\"Hallo {nama}, selamat pagi!\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nama = \"Boy\"\n",
+        "sapa(nama)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N2J5eR-vAh5t",
+        "outputId": "f1724daf-1321-4a35-fffe-ed2a9273e592"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hallo Boy, selamat pagi!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Fungsi return"
+      ],
+      "metadata": {
+        "id": "vVadxUdSA8eq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def luas_persegi(sisi):\n",
+        "  luas = sisi*sisi\n",
+        "  return luas"
+      ],
+      "metadata": {
+        "id": "n_sek6-2A-N6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hasil = luas_persegi(4)\n",
+        "\n",
+        "print(hasil)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YBHSuBVtBUWR",
+        "outputId": "863d7dbb-ed45-4348-88fe-19d0c893a5e6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Fungsi parameter defaults"
+      ],
+      "metadata": {
+        "id": "D7KwpvTrDl8c"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "F = G*(m1*m2/r**2)"
+      ],
+      "metadata": {
+        "id": "cj2vUkVXBvlH"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def gaya_gravitasi(m1, m2, r, G=6.7e-11):\n",
+        "  F = G*(m1*m2/r**2)\n",
+        "  return F"
+      ],
+      "metadata": {
+        "id": "L5DPBuzMCKK8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "gaya_gravitasi(100, 200, 0.1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WwbUa-k0CxPL",
+        "outputId": "bb708de1-ed63-4441-e472-3ba871e6d952"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0.00013399999999999998"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Fungsi dengan pointer"
+      ],
+      "metadata": {
+        "id": "42zdxTbuDqNw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def total(*args):\n",
+        "  return sum(args)"
+      ],
+      "metadata": {
+        "id": "e7AmzMaeDsck"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "args = total(1, 2, 3, 4)"
+      ],
+      "metadata": {
+        "id": "vu8ugy-UEE0e"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(args)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vZKkyC8kEZUu",
+        "outputId": "ec3b6f85-b3c9-4e91-d75c-f9f40bdb0352"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Challenge"
+      ],
+      "metadata": {
+        "id": "l7re8F85FSBq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Harga = 120.000\n",
+        "Harga > 100.000 -> 20%\n",
+        "\n",
+        "Buat fungsi untuk mengembalikan harga akhir setelah dipotong"
+      ],
+      "metadata": {
+        "id": "N9QGfTcXFRre"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def harga_diskon(harga, min_harga=100000, diskon=20):\n",
+        "  if harga > min_harga:\n",
+        "    potongan_harga = (diskon*harga)/100\n",
+        "  else:\n",
+        "    potongan_harga = 0\n",
+        "  return harga - potongan_harga"
+      ],
+      "metadata": {
+        "id": "bWGlcVg8Fi1P"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "harga_diskon(520000)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ahLnZEMdHM9y",
+        "outputId": "acac525b-d76b-4e14-9963-e823470ef12e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "416000.0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Lambda"
+      ],
+      "metadata": {
+        "id": "bquIuzqzICaD"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "luas = lambda sisi : sisi*sisi\n",
+        "\n",
+        "print(luas(10))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "thrf9TiCIVDS",
+        "outputId": "7da9dfed-5130-4d2c-ebe2-35702e4bc7e2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "100\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Scope"
+      ],
+      "metadata": {
+        "id": "SHJEmue4Jujn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = 10\n",
+        "\n",
+        "def ubah():\n",
+        "  global x\n",
+        "  x = 30\n",
+        "\n",
+        "ubah()\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HITGufGdJtN5",
+        "outputId": "e7de4738-d346-429c-db68-41cb41dbd406"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def luar():\n",
+        "  x = \"Python\"\n"
+      ],
+      "metadata": {
+        "id": "vIUwszZuL67M"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Modularisasi"
+      ],
+      "metadata": {
+        "id": "GecFaZwTORie"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "HlpldkXxObHZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
