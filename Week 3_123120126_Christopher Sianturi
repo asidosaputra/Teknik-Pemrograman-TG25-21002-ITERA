@@ -1,0 +1,8 @@
+import Konversi_suhu as Ks
+C = 27
+F = Ks.c_to_f(C)
+print(F)
+
+F = 45
+C = Ks.f_to_c(F)
+print(F)
