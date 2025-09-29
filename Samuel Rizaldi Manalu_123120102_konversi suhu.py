@@ -1,0 +1,29 @@
+#Samuel Rizaldi Manalu
+#123120102
+#Challenge 2
+#Konversi Suhu Fahrenheit ke Celcius dan Sebaliknya
+while True:
+    print('================ Konversi Suhu')
+    print('Pilih satuan suhu yang ingin Anda konversi:')
+    print('1. Celcius')
+    print('2. Fahrenheit')
+    print('3. Keluar')
+    
+    choice = input('Masukkan nomor pilihan (1/2/3): ')
+    
+    if choice == '3':
+        break  # Keluar dari loop jika pengguna memilih 3
+    
+    try:
+        temperature = float(input('Masukkan suhu: '))
+        
+        if choice == '1':
+            print("Fahrenheit:", 9/5 * temperature + 32)
+        elif choice == '2':
+            print("Celcius:", 5/9 * (temperature - 32))
+        else:
+            print('Pilihan tidak valid. Harap masukkan nomor pilihan yang benar.')
+    except ValueError:
+        print('Masukan tidak valid. Harap masukkan angka.')
+
+print('Terima kasih telah menggunakan program konversi suhu.')
