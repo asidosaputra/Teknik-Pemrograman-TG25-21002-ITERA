@@ -1,0 +1,12 @@
+jumlah_anggota = int(input("Masukkan jumlah anggota keluarga: ")) #jumlah anggota keluarga dari user
+
+total_usia = 0 #Inisialisasi total usia
+
+for i in range(1, jumlah_anggota + 1): #Input usia tiap anggota
+    usia = int(input(f"Masukkan usia anggota keluarga ke-{i}: "))
+    total_usia += usia
+
+rata_rata = total_usia / jumlah_anggota #Hitung rata-rata
+
+# Tampilkan hasil
+print(f"\nRata-rata usia keluarga adalah: {rata_rata:.2f} tahun")
